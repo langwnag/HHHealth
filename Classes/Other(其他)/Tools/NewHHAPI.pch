@@ -1,0 +1,30 @@
+//
+//  NewHHAPI.pch
+//  YiJiaYi
+//
+//  Created by LA on 2017/12/17.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#ifndef NewHHAPI_pch
+#define NewHHAPI_pch
+
+#import "Request.h"
+#import "LAUserInfo.h"
+
+#define LAOutsideServiceURL @"http://hhadmin.test6.tisapi.com/"
+#define LAInsideServiceURL @""
+
+#define LANewServiceURL LAOutsideServiceURL
+
+/************************* 登录 注册 **********************************/
+#define LARegister @"api/users/register.json"
+#define LAAutoLogin @"api/users/tokenLogin.json"
+#define LAUploadAvatar @"api/users/header.json"
+#define LALogin @"api/users/login.json"
+#define LAUserArea @"api/users/area.json"
+#define LACommunity @"api/users/community.json"
+#define LAChangeUserInfo @"api/users/updateInfor.json"
+#define LAShowUserInfo @"api/users/information.json"
+
+#endif /* NewHHAPI_pch */

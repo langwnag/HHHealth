@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GoldCoinsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000元" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axQ-jT-eKB">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="220" id="DJf-NU-IL4"/>
+                        <constraint firstAttribute="height" constant="52" id="Rwy-Z4-ph8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELC-Ff-GZe">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="lmd-p1-5Hv"/>
+                        <constraint firstAttribute="width" constant="80" id="ur3-gJ-VYe"/>
+                    </constraints>
+                    <state key="normal" title="充值金币&gt;">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="payCoins:" destination="iN0-l3-epB" eventType="touchUpInside" id="gUO-4e-eAp"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEg-Yy-Ne9">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金币明细" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LqR-09-YmU">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="3Se-x9-m7N"/>
+                                <constraint firstAttribute="width" constant="135" id="eEc-jI-cWX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="LqR-09-YmU" firstAttribute="leading" secondItem="FEg-Yy-Ne9" secondAttribute="leading" constant="10" id="Jpb-4D-eIW"/>
+                        <constraint firstItem="LqR-09-YmU" firstAttribute="top" secondItem="FEg-Yy-Ne9" secondAttribute="top" constant="12" id="TmF-xb-JbG"/>
+                        <constraint firstAttribute="height" constant="44" id="fhr-ye-Oac"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前合合币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APG-Jd-V82">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="110" id="0n5-Cf-y69"/>
+                        <constraint firstAttribute="height" constant="21" id="Yiy-i9-KHf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qe" translatesAutoresizingMaskIntoConstraints="NO" id="otz-ZR-KpF">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="b9X-bC-E4c"/>
+                        <constraint firstAttribute="height" constant="25" id="jXm-8c-Bnw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.15686274509803921" green="0.57647058823529407" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ELC-Ff-GZe" firstAttribute="top" secondItem="axQ-jT-eKB" secondAttribute="bottom" constant="30" id="9OC-6N-BrK"/>
+                <constraint firstItem="FEg-Yy-Ne9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T6Z-aD-pfp"/>
+                <constraint firstAttribute="bottom" secondItem="FEg-Yy-Ne9" secondAttribute="bottom" id="Xb9-5V-7mB"/>
+                <constraint firstAttribute="trailing" secondItem="FEg-Yy-Ne9" secondAttribute="trailing" id="ewY-EB-AJk"/>
+                <constraint firstItem="axQ-jT-eKB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gjA-Qp-GTQ"/>
+                <constraint firstItem="APG-Jd-V82" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ihe-CY-uEN"/>
+                <constraint firstItem="ELC-Ff-GZe" firstAttribute="centerX" secondItem="axQ-jT-eKB" secondAttribute="centerX" id="jkJ-6h-JfI"/>
+                <constraint firstItem="APG-Jd-V82" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="ocv-Ri-6du"/>
+                <constraint firstItem="otz-ZR-KpF" firstAttribute="centerY" secondItem="APG-Jd-V82" secondAttribute="centerY" id="tPe-QP-Ouj"/>
+                <constraint firstAttribute="trailing" secondItem="otz-ZR-KpF" secondAttribute="trailing" constant="15" id="wAX-IQ-Zgn"/>
+                <constraint firstItem="axQ-jT-eKB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="xZv-1W-gwN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="coinsNumLa" destination="axQ-jT-eKB" id="gNP-b0-4ir"/>
+                <outlet property="getGoldCoinsBtn" destination="ELC-Ff-GZe" id="usD-mE-bak"/>
+            </connections>
+            <point key="canvasLocation" x="-202.5" y="-822.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qe" width="16" height="16"/>
+    </resources>
+</document>

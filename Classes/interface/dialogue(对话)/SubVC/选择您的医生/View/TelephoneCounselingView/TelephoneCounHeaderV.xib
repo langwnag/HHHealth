@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TelephoneCounHeaderV">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="Ed9-Uv-wr0">
+                    <rect key="frame" x="150.5" y="21" width="74" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="BZJ-1C-59E"/>
+                        <constraint firstAttribute="width" constant="74" id="Pf9-NO-Hct"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话咨询" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HA8-8H-r8I">
+                    <rect key="frame" x="105" y="105" width="165" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Z2l-9B-Noq"/>
+                        <constraint firstAttribute="width" constant="165" id="cZw-H5-w8O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HA8-8H-r8I" firstAttribute="centerX" secondItem="Ed9-Uv-wr0" secondAttribute="centerX" id="677-P9-TEV"/>
+                <constraint firstItem="HA8-8H-r8I" firstAttribute="top" secondItem="Ed9-Uv-wr0" secondAttribute="bottom" constant="10" id="jNg-Y0-ifk"/>
+                <constraint firstItem="Ed9-Uv-wr0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="21" id="wiy-Ql-AH1"/>
+                <constraint firstItem="Ed9-Uv-wr0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="x9r-7x-0jD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headImageV" destination="Ed9-Uv-wr0" id="ybL-Qz-1Nk"/>
+                <outlet property="phoneLa" destination="HA8-8H-r8I" id="zvB-RA-xEl"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-182"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="phone" width="110" height="110"/>
+    </resources>
+</document>

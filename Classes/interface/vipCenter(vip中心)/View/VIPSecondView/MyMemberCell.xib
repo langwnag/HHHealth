@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyMemberCell">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="120*120" translatesAutoresizingMaskIntoConstraints="NO" id="5AP-tb-2Mv">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="7gB-UB-4ln"/>
+                            <constraint firstAttribute="height" constant="50" id="g0G-z9-8Ug"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专家优先" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKX-Fj-joZ">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="647-TK-xL0"/>
+                            <constraint firstAttribute="height" constant="21" id="cas-BT-QDs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.51655043369999998" green="1" blue="0.54039885180000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eKX-Fj-joZ" firstAttribute="centerX" secondItem="5AP-tb-2Mv" secondAttribute="centerX" id="9XP-P6-zx6"/>
+                <constraint firstItem="5AP-tb-2Mv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="W5J-MN-kdb"/>
+                <constraint firstItem="5AP-tb-2Mv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dci-S5-6Ge"/>
+                <constraint firstItem="eKX-Fj-joZ" firstAttribute="top" secondItem="5AP-tb-2Mv" secondAttribute="bottom" constant="6" id="fMH-Fl-JTn"/>
+            </constraints>
+            <size key="customSize" width="93" height="95"/>
+            <connections>
+                <outlet property="descripationLa" destination="eKX-Fj-joZ" id="BQ1-i4-W1f"/>
+                <outlet property="iconView" destination="5AP-tb-2Mv" id="Q0t-sh-tsD"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="38"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="120*120" width="120" height="120"/>
+    </resources>
+</document>

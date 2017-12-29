@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NONetworkView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRh-9c-Q9b">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="抱歉，当前网络情况不佳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cff-pO-6pw">
+                            <frame key="frameInset" minX="23" minY="10" width="154" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Yl2-Of-vTD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUa-Ms-19k">
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="0sX-b2-gox"/>
+                                <constraint firstAttribute="width" constant="165" id="ERA-Zk-e3W"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <state key="normal" title="点击刷新">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="refreshBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Iz3-wm-78f"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="YUa-Ms-19k" firstAttribute="top" secondItem="cff-pO-6pw" secondAttribute="bottom" constant="5" id="1gG-Q3-HYq"/>
+                        <constraint firstItem="YUa-Ms-19k" firstAttribute="centerX" secondItem="iRh-9c-Q9b" secondAttribute="centerX" id="Bux-lc-SCP"/>
+                        <constraint firstAttribute="width" constant="200" id="L2N-R7-kiP"/>
+                        <constraint firstItem="cff-pO-6pw" firstAttribute="top" secondItem="iRh-9c-Q9b" secondAttribute="top" constant="10" id="hNP-L2-tjr"/>
+                        <constraint firstAttribute="height" constant="80" id="hhp-Eq-dEw"/>
+                        <constraint firstItem="cff-pO-6pw" firstAttribute="centerX" secondItem="iRh-9c-Q9b" secondAttribute="centerX" id="s9w-sJ-hYz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iRh-9c-Q9b" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="S93-rz-Zie"/>
+                <constraint firstItem="iRh-9c-Q9b" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="b7u-7w-4yq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="422" y="316"/>
+        </view>
+    </objects>
+</document>

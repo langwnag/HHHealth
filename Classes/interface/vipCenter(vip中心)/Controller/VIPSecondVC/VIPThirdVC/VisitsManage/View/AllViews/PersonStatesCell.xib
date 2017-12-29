@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PersonStatesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DBI-rV-B7b">
+                        <rect key="frame" x="8" y="11.5" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5w5-qx-CTj"/>
+                            <constraint firstAttribute="width" constant="80" id="l7n-kh-RdS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="术后康复" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apQ-FV-3ud">
+                        <rect key="frame" x="98" y="11.5" width="209" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="209" id="35i-lB-IAd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="554-Nr-ysI">
+                        <rect key="frame" x="8" y="42.5" width="304" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WIG-Iy-UYV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DBI-rV-B7b" firstAttribute="leading" secondItem="554-Nr-ysI" secondAttribute="leading" id="6AR-PT-5pm"/>
+                    <constraint firstItem="DBI-rV-B7b" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6n2-ck-G7s"/>
+                    <constraint firstAttribute="bottom" secondItem="554-Nr-ysI" secondAttribute="bottom" id="JA4-Qi-87V"/>
+                    <constraint firstItem="apQ-FV-3ud" firstAttribute="centerY" secondItem="DBI-rV-B7b" secondAttribute="centerY" id="XJ8-Do-ia5"/>
+                    <constraint firstItem="apQ-FV-3ud" firstAttribute="leading" secondItem="DBI-rV-B7b" secondAttribute="trailing" constant="10" id="eRl-ig-T7Y"/>
+                    <constraint firstAttribute="trailing" secondItem="554-Nr-ysI" secondAttribute="trailing" constant="8" id="epk-8Y-04O"/>
+                    <constraint firstItem="554-Nr-ysI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lN0-Vn-6ep"/>
+                    <constraint firstItem="apQ-FV-3ud" firstAttribute="height" secondItem="DBI-rV-B7b" secondAttribute="height" id="xzo-BL-682"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLa" destination="apQ-FV-3ud" id="C2g-zU-LSt"/>
+                <outlet property="leftLa" destination="DBI-rV-B7b" id="d0s-FB-hxo"/>
+                <outlet property="lineV" destination="554-Nr-ysI" id="qmB-Df-a4a"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

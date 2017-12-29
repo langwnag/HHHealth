@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="KGk-i7-Jjw" customClass="HealthDiaryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeX-LQ-ofq">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="健康日记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaD-uq-Amr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="Iyx-Qm-cak"/>
+                                    <constraint firstAttribute="height" constant="21" id="hvW-aA-hnp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.82342478720000001" blue="0.45734817700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-03-01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AW-QS-M8X">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="45I-hR-hkA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.82342478720000001" blue="0.45734817700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.57647058819999997" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VaD-uq-Amr" firstAttribute="centerY" secondItem="BeX-LQ-ofq" secondAttribute="centerY" id="6Jv-1W-HOT"/>
+                            <constraint firstItem="5AW-QS-M8X" firstAttribute="centerY" secondItem="BeX-LQ-ofq" secondAttribute="centerY" id="6Se-Fi-XhX"/>
+                            <constraint firstItem="VaD-uq-Amr" firstAttribute="leading" secondItem="BeX-LQ-ofq" secondAttribute="leading" constant="12" id="DLD-WJ-oUQ"/>
+                            <constraint firstItem="5AW-QS-M8X" firstAttribute="height" secondItem="BeX-LQ-ofq" secondAttribute="height" id="XA5-pp-48y"/>
+                            <constraint firstAttribute="trailing" secondItem="5AW-QS-M8X" secondAttribute="trailing" constant="12" id="bWb-16-SPQ"/>
+                            <constraint firstAttribute="height" constant="40" id="iWa-N1-ugm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="BeX-LQ-ofq" secondAttribute="trailing" constant="11.5" id="PbL-3t-lCA"/>
+                    <constraint firstItem="BeX-LQ-ofq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="11.5" id="d7u-zy-W0p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="BeX-LQ-ofq" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="IxB-S1-O14"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomV" destination="BeX-LQ-ofq" id="9NE-iP-wow"/>
+                <outlet property="dataLa" destination="5AW-QS-M8X" id="Gir-Pl-fA3"/>
+                <outlet property="healthLa" destination="VaD-uq-Amr" id="eLq-6g-jSj"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="-62"/>
+        </tableViewCell>
+    </objects>
+</document>

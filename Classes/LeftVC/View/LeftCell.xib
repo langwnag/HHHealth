@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="LeftCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="179.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VUW-NA-ykR">
+                        <rect key="frame" x="55" y="43" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="RkA-IY-Mu7"/>
+                            <constraint firstAttribute="height" constant="70" id="vWB-0I-BQ6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每日签到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBg-eN-Ux9">
+                        <rect key="frame" x="38" y="118" width="105" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="BVo-ev-VB0"/>
+                            <constraint firstAttribute="height" constant="21" id="GFl-ri-eJT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="aBg-eN-Ux9" secondAttribute="bottom" constant="22" id="2kd-JI-whH"/>
+                    <constraint firstItem="VUW-NA-ykR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="5Vr-DQ-DSn"/>
+                    <constraint firstItem="aBg-eN-Ux9" firstAttribute="top" secondItem="VUW-NA-ykR" secondAttribute="bottom" constant="5" id="6bg-kh-JPd"/>
+                    <constraint firstItem="aBg-eN-Ux9" firstAttribute="centerX" secondItem="VUW-NA-ykR" secondAttribute="centerX" id="LSV-Fl-ppc"/>
+                    <constraint firstItem="VUW-NA-ykR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="35" id="O1C-vq-3PW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aBg-eN-Ux9" secondAttribute="bottom" constant="39.5" id="QNe-MB-gvi"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="2kd-JI-whH"/>
+                        <exclude reference="QNe-MB-gvi"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImage" destination="VUW-NA-ykR" id="jiU-LU-3eL"/>
+                <outlet property="titleLabel" destination="aBg-eN-Ux9" id="Sz2-cM-acU"/>
+            </connections>
+            <point key="canvasLocation" x="235" y="314"/>
+        </tableViewCell>
+    </objects>
+</document>

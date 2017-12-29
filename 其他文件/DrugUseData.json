@@ -1,0 +1,22 @@
+[
+  {
+    "drugName" : "阿莫西林",
+    "drugUseID" : "0001",
+    "personNotes" : "多喝水",
+    "repeateType" : "每天",
+    "startDate" : "2016-12-31",
+    "timeArr" : "08:10 12:10 18:30",
+    "useNum" : "0.5ml",
+    "alertState" : 1
+  },
+  {
+    "drugName" : "吗丁啉",
+    "drugUseID" : "0002",
+    "personNotes" : "多喝水",
+    "repeateType" : "每周",
+    "startDate" : "2017-01-01",
+    "timeArr" : "08:10 12:10 18:30",
+    "useNum" : "1粒",
+    "alertState" : 0
+  }
+]

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>vipLevel</key>
+		<integer>2</integer>
+		<key>index</key>
+		<string>0.59</string>
+		<key>relationship</key>
+		<string>父亲</string>
+		<key>name</key>
+		<string>刘长江</string>
+		<key>time</key>
+		<string>2016/07/31:18:13</string>
+		<key>diseaseResion</key>
+		<string>心压升高10</string>
+		<key>icon</key>
+		<string>父亲</string>
+	</dict>
+	<dict>
+		<key>vipLevel</key>
+		<integer>2</integer>
+		<key>index</key>
+		<string>0.60</string>
+		<key>relationship</key>
+		<string>母亲</string>
+		<key>name</key>
+		<string>朱丽梅</string>
+		<key>time</key>
+		<string>2016/01/03:18:13</string>
+		<key>diseaseResion</key>
+		<string>心绞痛</string>
+		<key>icon</key>
+		<string>母亲</string>
+	</dict>
+	<dict>
+		<key>vipLevel</key>
+		<integer>3</integer>
+		<key>index</key>
+		<string>0.80</string>
+		<key>relationship</key>
+		<string>妻子</string>
+		<key>name</key>
+		<string> 梁娟</string>
+		<key>time</key>
+		<string>2016/07/9:18:13</string>
+		<key>diseaseResion</key>
+		<string>乳腺增生</string>
+		<key>icon</key>
+		<string>妻子</string>
+	</dict>
+	<dict>
+		<key>vipLevel</key>
+		<integer>1</integer>
+		<key>index</key>
+		<string>0.43</string>
+		<key>relationship</key>
+		<string>岳父</string>
+		<key>name</key>
+		<string>梁正华</string>
+		<key>time</key>
+		<string>2016/12/18:18:13</string>
+		<key>diseaseResion</key>
+		<string>血糖升高</string>
+		<key>icon</key>
+		<string>岳父</string>
+	</dict>
+	<dict>
+		<key>vipLevel</key>
+		<integer>1</integer>
+		<key>index</key>
+		<string>0.62</string>
+		<key>relationship</key>
+		<string>岳母</string>
+		<key>name</key>
+		<string>李秋月</string>
+		<key>time</key>
+		<string>2016/12/15:18:13</string>
+		<key>diseaseResion</key>
+		<string>风湿病 脚步扭伤</string>
+		<key>icon</key>
+		<string>岳母</string>
+	</dict>
+</array>
+</plist>

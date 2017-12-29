@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TelephoneCounFooterV">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-Qf-8pM">
+                    <rect key="frame" x="20" y="0.0" width="335" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ZoP-VS-j5i"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9mh-jA-wCv">
+                    <rect key="frame" x="20" y="12" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="UaX-hW-uF6"/>
+                        <constraint firstAttribute="height" constant="20" id="tVK-Iu-anw"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="border"/>
+                    <state key="selected" image="selectboder"/>
+                    <connections>
+                        <action selector="selectBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="DIe-s0-Dsn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已阅读《合合健康电话咨询说明》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSc-ud-OdI">
+                    <rect key="frame" x="50" y="12" width="260" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="OXY-lr-MwP"/>
+                        <constraint firstAttribute="height" constant="21" id="ZM4-aN-AU1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQ6-Rz-E0M">
+                    <rect key="frame" x="20" y="44" width="335" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Av7-uo-kUU"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBI-YT-8b2">
+                    <rect key="frame" x="66" y="60" width="244" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Oor-XE-2mO"/>
+                        <constraint firstAttribute="width" constant="244" id="qXO-mO-Ybm"/>
+                    </constraints>
+                    <state key="normal" title="支付">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="counseingBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="cDz-Xl-6KQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hQ6-Rz-E0M" firstAttribute="leading" secondItem="9mh-jA-wCv" secondAttribute="leading" id="2z5-Fd-7fD"/>
+                <constraint firstItem="UBI-YT-8b2" firstAttribute="top" secondItem="hQ6-Rz-E0M" secondAttribute="bottom" constant="15" id="392-NY-dkK"/>
+                <constraint firstItem="9mh-jA-wCv" firstAttribute="leading" secondItem="nmw-Qf-8pM" secondAttribute="leading" id="6cf-F4-7Ug"/>
+                <constraint firstItem="qSc-ud-OdI" firstAttribute="leading" secondItem="9mh-jA-wCv" secondAttribute="trailing" constant="10" id="AiO-Lj-Q1x"/>
+                <constraint firstItem="9mh-jA-wCv" firstAttribute="top" secondItem="nmw-Qf-8pM" secondAttribute="bottom" constant="11" id="GFH-mR-Uyl"/>
+                <constraint firstItem="hQ6-Rz-E0M" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KWB-61-aHd"/>
+                <constraint firstItem="UBI-YT-8b2" firstAttribute="centerX" secondItem="hQ6-Rz-E0M" secondAttribute="centerX" id="eZf-oB-F9P"/>
+                <constraint firstItem="qSc-ud-OdI" firstAttribute="centerY" secondItem="9mh-jA-wCv" secondAttribute="centerY" id="ecD-ct-An0"/>
+                <constraint firstItem="nmw-Qf-8pM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nYs-xj-QnQ"/>
+                <constraint firstItem="nmw-Qf-8pM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="qmY-c5-Ub3"/>
+                <constraint firstItem="hQ6-Rz-E0M" firstAttribute="top" secondItem="qSc-ud-OdI" secondAttribute="bottom" constant="11" id="v8M-1D-kG3"/>
+                <constraint firstItem="nmw-Qf-8pM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wdS-KN-71A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="counseingBtn" destination="UBI-YT-8b2" id="cf7-qK-hvd"/>
+                <outlet property="selectBtn" destination="9mh-jA-wCv" id="YRp-Ev-Lgf"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="-206.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="border" width="17" height="15"/>
+        <image name="selectboder" width="30" height="25"/>
+    </resources>
+</document>

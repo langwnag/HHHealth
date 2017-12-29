@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>postion</key>
+		<string> 小儿科 副主任医师</string>
+		<key>name</key>
+		<string>张晓曦</string>
+		<key>hospital</key>
+		<string>北京大学人民医院 顶级医院</string>
+		<key>characteristic</key>
+		<string>新生儿疾病、发育、幼儿急疹、手足口病</string>
+		<key>icon</key>
+		<string>aa</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>雷雨</string>
+		<key>postion</key>
+		<string> 小儿科 副主任医师</string>
+		<key>hospital</key>
+		<string>北京协和医院 顶级医院</string>
+		<key>characteristic</key>
+		<string>发育、幼儿急疹、手足口病、以及心脏病</string>
+		<key>icon</key>
+		<string>bb</string>
+	</dict>
+	<dict>
+		<key>postion</key>
+		<string> 小儿科 副主任医师</string>
+		<key>name</key>
+		<string>李杰</string>
+		<key>hospital</key>
+		<string>北京大学人民医院 顶级医院</string>
+		<key>characteristic</key>
+		<string>新生儿疾病、发育、幼儿急疹、手足口病</string>
+		<key>icon</key>
+		<string>cc</string>
+	</dict>
+	<dict>
+		<key>postion</key>
+		<string>小儿科 副主任医师</string>
+		<key>name</key>
+		<string>文春玲 </string>
+		<key>hospital</key>
+		<string>北京大学人民医院 顶级医院</string>
+		<key>characteristic</key>
+		<string>新生儿疾病、发育、幼儿急疹、手足口病</string>
+		<key>icon</key>
+		<string>dd</string>
+	</dict>
+	<dict>
+		<key>postion</key>
+		<string>小儿科 副主任医师</string>
+		<key>name</key>
+		<string>张晓曦 </string>
+		<key>hospital</key>
+		<string>北京大学人民医院 顶级医院</string>
+		<key>characteristic</key>
+		<string>新生儿疾病、发育、幼儿急疹、手足口病</string>
+		<key>icon</key>
+		<string>dd</string>
+	</dict>
+	<dict>
+		<key>postion</key>
+		<string>小儿科 副主任医师</string>
+		<key>name</key>
+		<string>张晓曦 </string>
+		<key>hospital</key>
+		<string>北京大学人民医院 顶级医院</string>
+		<key>characteristic</key>
+		<string>新生儿疾病、发育、幼儿急疹、手足口病</string>
+		<key>icon</key>
+		<string>cc</string>
+	</dict>
+</array>
+</plist>

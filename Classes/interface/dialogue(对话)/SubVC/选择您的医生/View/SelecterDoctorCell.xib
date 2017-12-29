@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SelecterDoctorCell">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeathCircle_Default" translatesAutoresizingMaskIntoConstraints="NO" id="6NP-xb-SY2">
+                        <rect key="frame" x="8" y="16" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="张医生 北京309医院 主任医师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrk-V9-AfM">
+                        <rect key="frame" x="73" y="16" width="220" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="张医生 北京309医院 主任医师" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHq-vv-tI8">
+                        <rect key="frame" x="73" y="40" width="220" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.63921568627450975" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="u0g-od-KOD">
+                        <rect key="frame" x="73" y="70.5" width="12" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="distance" translatesAutoresizingMaskIntoConstraints="NO" id="6fD-Rj-65q">
+                        <rect key="frame" x="130" y="70.5" width="12" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selecter_crilcle" translatesAutoresizingMaskIntoConstraints="NO" id="cHO-Nd-zrt">
+                        <rect key="frame" x="299" y="30" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="35" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NA-Jh-XHT">
+                        <rect key="frame" x="91" y="69.5" width="15" height="14.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CareFamily_cellLine" translatesAutoresizingMaskIntoConstraints="NO" id="L1S-4J-WNs">
+                        <rect key="frame" x="-8" y="91" width="373" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="bOS-a4-j0O"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2VV-Ue-3NP">
+                        <rect key="frame" x="150" y="69.5" width="30.5" height="14.5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wsF-7d-3eD">
+                        <rect key="frame" x="8" y="61" width="50" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-ks-AYi">
+                        <rect key="frame" x="8" y="61" width="50" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="L1S-4J-WNs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-8" id="4yh-ZT-wiG"/>
+                    <constraint firstAttribute="bottom" secondItem="L1S-4J-WNs" secondAttribute="bottom" id="E6b-K1-XCK"/>
+                    <constraint firstAttribute="trailing" secondItem="L1S-4J-WNs" secondAttribute="trailing" constant="-8" id="MG0-RZ-A38"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="attendingDoctorLabel" destination="Wrk-V9-AfM" id="mWJ-MM-4vc"/>
+                <outlet property="distanceLabel" destination="2VV-Ue-3NP" id="gVb-4y-3A3"/>
+                <outlet property="functionLabel" destination="dHq-vv-tI8" id="52w-aw-8La"/>
+                <outlet property="hasSignedImageV" destination="MbR-ks-AYi" id="AzD-Lw-e8h"/>
+                <outlet property="hide1" destination="u0g-od-KOD" id="7Gi-4l-SZk"/>
+                <outlet property="hide2" destination="6fD-Rj-65q" id="ahr-xH-W8r"/>
+                <outlet property="peopleImage" destination="6NP-xb-SY2" id="UGG-jx-LyM"/>
+                <outlet property="selecterBtn" destination="cHO-Nd-zrt" id="yOt-yE-WvR"/>
+                <outlet property="trophiesNumberLabel" destination="8NA-Jh-XHT" id="ZRo-7h-feK"/>
+            </connections>
+            <point key="canvasLocation" x="23.5" y="104"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CareFamily_cellLine" width="750" height="19"/>
+        <image name="HeathCircle_Default" width="74" height="74"/>
+        <image name="distance" width="22" height="23"/>
+        <image name="selecter_crilcle" width="83" height="83"/>
+        <image name="trophy" width="21" height="20"/>
+    </resources>
+</document>

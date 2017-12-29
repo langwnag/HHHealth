@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OverseasMedicalFooter">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rtl-0n-zgs">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="VkX-mf-KPZ"/>
+                        <constraint firstAttribute="height" constant="35" id="WY5-5U-CCW"/>
+                    </constraints>
+                    <color key="textColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6s0-T4-Rhd">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="D3T-YT-ev8"/>
+                        <constraint firstAttribute="height" constant="1" id="hRq-bH-tyj"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cGv-Id-N6k">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="Gk0-a6-A7s"/>
+                        <constraint firstAttribute="height" constant="38" id="i7S-Hv-26N"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                            <color key="value" red="0.26666666666666666" green="0.26666666666666666" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-5o-6ep">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vPN-xR-Lxp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rB-a9-9ba">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="192" id="Fcr-k1-nEI"/>
+                        <constraint firstAttribute="height" constant="32.5" id="vc2-0T-bkY"/>
+                    </constraints>
+                    <state key="normal" title="提交在线咨询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onLineClickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="3H0-Fm-eaP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5rB-a9-9ba" firstAttribute="top" secondItem="fhz-5o-6ep" secondAttribute="bottom" constant="34" id="1wx-Xf-hee"/>
+                <constraint firstItem="Rtl-0n-zgs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="40i-aG-vVs"/>
+                <constraint firstItem="fhz-5o-6ep" firstAttribute="top" secondItem="cGv-Id-N6k" secondAttribute="bottom" constant="5" id="4Cs-JT-wYK"/>
+                <constraint firstItem="cGv-Id-N6k" firstAttribute="centerX" secondItem="6s0-T4-Rhd" secondAttribute="centerX" id="98I-wo-yWm"/>
+                <constraint firstItem="fhz-5o-6ep" firstAttribute="centerX" secondItem="cGv-Id-N6k" secondAttribute="centerX" id="CpD-Ne-4yt"/>
+                <constraint firstItem="6s0-T4-Rhd" firstAttribute="centerX" secondItem="Rtl-0n-zgs" secondAttribute="centerX" id="IPf-T0-vEZ"/>
+                <constraint firstItem="Rtl-0n-zgs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MoF-vA-zxd"/>
+                <constraint firstItem="5rB-a9-9ba" firstAttribute="centerX" secondItem="fhz-5o-6ep" secondAttribute="centerX" id="Pe8-kP-a6R"/>
+                <constraint firstItem="6s0-T4-Rhd" firstAttribute="top" secondItem="Rtl-0n-zgs" secondAttribute="bottom" constant="5" id="Q5y-HR-Pcv"/>
+                <constraint firstItem="Rtl-0n-zgs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QRf-Qj-A3x"/>
+                <constraint firstItem="cGv-Id-N6k" firstAttribute="top" secondItem="6s0-T4-Rhd" secondAttribute="bottom" id="R9K-rv-cWy"/>
+                <constraint firstItem="fhz-5o-6ep" firstAttribute="width" secondItem="cGv-Id-N6k" secondAttribute="width" id="WeD-mv-qCg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contactNameTF" destination="Rtl-0n-zgs" id="IT5-hy-VAL"/>
+                <outlet property="contactPhoneTF" destination="cGv-Id-N6k" id="OHw-AE-tPl"/>
+                <outlet property="onLineClickBtn" destination="5rB-a9-9ba" id="IeK-Ji-r06"/>
+            </connections>
+            <point key="canvasLocation" x="-38.5" y="-151.5"/>
+        </view>
+    </objects>
+</document>

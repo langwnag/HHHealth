@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PayFooterViews">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5d-Tq-1AQ">
+                    <rect key="frame" x="0.0" y="65" width="375" height="8"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="QNE-0d-HcR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIz-Tp-vc6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLJ-e2-0xz">
+                            <rect key="frame" x="175" y="17" width="90" height="30"/>
+                            <state key="normal" title="修改服务">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="motify:" destination="iN0-l3-epB" eventType="touchUpInside" id="XSX-XW-oe5"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3j-LZ-hPC">
+                            <rect key="frame" x="73" y="17" width="90" height="30"/>
+                            <state key="normal" title="支付">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="payBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="924-3R-kty"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIx-ad-wRJ">
+                            <rect key="frame" x="277" y="17" width="90" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="CcT-Cd-5PS"/>
+                                <constraint firstAttribute="width" constant="90" id="nE7-OW-Y37"/>
+                            </constraints>
+                            <state key="normal" title="取消订单">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="OvA-f9-eLb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qLJ-e2-0xz" firstAttribute="leading" secondItem="b3j-LZ-hPC" secondAttribute="trailing" constant="12" id="4Tx-nA-76Q"/>
+                        <constraint firstItem="b3j-LZ-hPC" firstAttribute="centerY" secondItem="qLJ-e2-0xz" secondAttribute="centerY" id="8jO-wg-L2g"/>
+                        <constraint firstItem="aIx-ad-wRJ" firstAttribute="leading" secondItem="qLJ-e2-0xz" secondAttribute="trailing" constant="12" id="Dto-ot-y7R"/>
+                        <constraint firstItem="qLJ-e2-0xz" firstAttribute="centerY" secondItem="aIx-ad-wRJ" secondAttribute="centerY" id="Mt8-YL-Jr8"/>
+                        <constraint firstItem="aIx-ad-wRJ" firstAttribute="centerY" secondItem="jIz-Tp-vc6" secondAttribute="centerY" id="VTM-rH-XM0"/>
+                        <constraint firstItem="b3j-LZ-hPC" firstAttribute="width" secondItem="qLJ-e2-0xz" secondAttribute="width" id="WUd-8N-HrI"/>
+                        <constraint firstItem="b3j-LZ-hPC" firstAttribute="height" secondItem="qLJ-e2-0xz" secondAttribute="height" id="c8y-Kb-IbC"/>
+                        <constraint firstItem="qLJ-e2-0xz" firstAttribute="width" secondItem="aIx-ad-wRJ" secondAttribute="width" id="ioU-rK-2uU"/>
+                        <constraint firstItem="qLJ-e2-0xz" firstAttribute="height" secondItem="aIx-ad-wRJ" secondAttribute="height" id="nzY-Ie-A2d"/>
+                        <constraint firstAttribute="trailing" secondItem="aIx-ad-wRJ" secondAttribute="trailing" constant="8" id="uES-xX-ldm"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jIz-Tp-vc6" secondAttribute="trailing" id="8hj-g6-h22"/>
+                <constraint firstAttribute="trailing" secondItem="O5d-Tq-1AQ" secondAttribute="trailing" id="Pwb-7E-T5i"/>
+                <constraint firstItem="jIz-Tp-vc6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ltO-T4-Llh"/>
+                <constraint firstItem="O5d-Tq-1AQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qV1-Hx-dA8"/>
+                <constraint firstItem="jIz-Tp-vc6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rtc-GR-Wzc"/>
+                <constraint firstAttribute="bottom" secondItem="O5d-Tq-1AQ" secondAttribute="bottom" id="xkM-pa-h1x"/>
+                <constraint firstItem="O5d-Tq-1AQ" firstAttribute="top" secondItem="jIz-Tp-vc6" secondAttribute="bottom" id="ymi-YO-UKN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="aIx-ad-wRJ" id="IfW-mb-YJ5"/>
+                <outlet property="motifyBtn" destination="qLJ-e2-0xz" id="d7q-p6-Rkx"/>
+                <outlet property="payBtn" destination="b3j-LZ-hPC" id="Kgq-Tx-Y5d"/>
+            </connections>
+            <point key="canvasLocation" x="-48.5" y="-166.5"/>
+        </view>
+    </objects>
+</document>

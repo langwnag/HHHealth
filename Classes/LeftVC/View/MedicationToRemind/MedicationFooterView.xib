@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="T3g-On-NAc" customClass="MedicationFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agW-k0-yfi">
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WMg-d7-A9Z"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghJ-Nk-ZNf">
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="95" id="x82-nM-CJ2"/>
+                    </constraints>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRL-wG-S23">
+                    <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dU5-Fb-Z4c"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人备注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEg-bH-TvK">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DiG-3l-rqx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdf-UX-dxe">
+                    <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="igh-gu-4Bt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ghJ-Nk-ZNf" firstAttribute="leading" secondItem="T3g-On-NAc" secondAttribute="leading" constant="10" id="1Y7-nu-1Zy"/>
+                <constraint firstAttribute="trailing" secondItem="ghJ-Nk-ZNf" secondAttribute="trailing" constant="10" id="4s0-96-J1U"/>
+                <constraint firstAttribute="bottom" secondItem="DRL-wG-S23" secondAttribute="bottom" constant="8" id="57L-EY-WvJ"/>
+                <constraint firstItem="UEg-bH-TvK" firstAttribute="top" secondItem="tdf-UX-dxe" secondAttribute="bottom" constant="7" id="SPc-EZ-UTX"/>
+                <constraint firstItem="DRL-wG-S23" firstAttribute="leading" secondItem="T3g-On-NAc" secondAttribute="leading" constant="10" id="Sin-58-fv6"/>
+                <constraint firstItem="ghJ-Nk-ZNf" firstAttribute="top" secondItem="agW-k0-yfi" secondAttribute="bottom" constant="5" id="T6m-te-RKD"/>
+                <constraint firstAttribute="trailing" secondItem="DRL-wG-S23" secondAttribute="trailing" constant="10" id="TPv-Wl-x5p"/>
+                <constraint firstAttribute="trailing" secondItem="UEg-bH-TvK" secondAttribute="trailing" constant="10" id="aa3-ay-igJ"/>
+                <constraint firstItem="agW-k0-yfi" firstAttribute="leading" secondItem="T3g-On-NAc" secondAttribute="leading" constant="10" id="bTh-YR-51h"/>
+                <constraint firstAttribute="trailing" secondItem="tdf-UX-dxe" secondAttribute="trailing" id="dgj-wW-GNN"/>
+                <constraint firstItem="UEg-bH-TvK" firstAttribute="leading" secondItem="T3g-On-NAc" secondAttribute="leading" constant="10" id="dpC-Hc-gzY"/>
+                <constraint firstItem="agW-k0-yfi" firstAttribute="top" secondItem="UEg-bH-TvK" secondAttribute="bottom" constant="6" id="hHY-En-g6P"/>
+                <constraint firstItem="tdf-UX-dxe" firstAttribute="leading" secondItem="T3g-On-NAc" secondAttribute="leading" id="mdh-zC-wHT"/>
+                <constraint firstItem="tdf-UX-dxe" firstAttribute="top" secondItem="T3g-On-NAc" secondAttribute="top" id="rGT-Kp-niq"/>
+                <constraint firstAttribute="trailing" secondItem="agW-k0-yfi" secondAttribute="trailing" constant="10" id="wnk-vm-Y6L"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textView" destination="ghJ-Nk-ZNf" id="5NB-e1-Y6d"/>
+            </connections>
+            <point key="canvasLocation" x="-19" y="-60"/>
+        </view>
+    </objects>
+</document>

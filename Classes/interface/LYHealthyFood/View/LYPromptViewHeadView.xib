@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LYPromptViewHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIP会员 - 健康食疗" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpN-Wt-Csk">
+                    <rect key="frame" x="15" y="15" width="290" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="fEw-rn-brO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开通会员，免费无限观看，尊享特权" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-Mq-SIz">
+                    <rect key="frame" x="15" y="40" width="290" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="pFj-HV-bFf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xgM-Mq-SIz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="9vh-bC-XDS"/>
+                <constraint firstItem="LpN-Wt-Csk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="DnA-WX-khE"/>
+                <constraint firstItem="xgM-Mq-SIz" firstAttribute="top" secondItem="LpN-Wt-Csk" secondAttribute="bottom" constant="5" id="MRW-oc-zaq"/>
+                <constraint firstAttribute="trailing" secondItem="xgM-Mq-SIz" secondAttribute="trailing" constant="15" id="d4M-mg-ZeM"/>
+                <constraint firstAttribute="trailing" secondItem="LpN-Wt-Csk" secondAttribute="trailing" constant="15" id="emY-7Y-2Ob"/>
+                <constraint firstItem="LpN-Wt-Csk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="qAJ-qV-8uC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subTitleLab" destination="xgM-Mq-SIz" id="aJa-wk-GJo"/>
+                <outlet property="titleLab" destination="LpN-Wt-Csk" id="UF1-T0-5oD"/>
+            </connections>
+        </view>
+    </objects>
+</document>

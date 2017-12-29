@@ -1,0 +1,143 @@
+//
+//  SZRPCH.pch
+//  YiJiaYi
+//
+//  Created by 莱昂纳德 on 16/6/14.
+//  Copyright © 2016年 mac. All rights reserved.
+//
+
+#ifndef SZRPCH_pch
+#define SZRPCH_pch
+#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+
+// 自定义Log
+#ifdef DEBUG //处于开发阶段
+#define SZRLog(...) NSLog(__VA_ARGS__)
+#else//处于发布阶段
+#define SZRLog(...)
+#endif
+
+// 中文字体
+#define CHINESE_FONT_NAME  @"Heiti SC"
+#define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
+
+// 6适配
+#define kScreenWidthRatio  (SZRScreenWidth / 375.0)
+#define kScreenHeightRatio (SZRScreenHeight / 667.0)
+#define kAdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
+#define kAdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define kAdaptedWidth_2(x)  ceilf((x/2.0) * kScreenWidthRatio)
+#define kAdaptedHeight_2(x) ceilf((x/2.0) * kScreenHeightRatio)
+#define kFontAdaptedWidth(x)  floor((x) * kScreenWidthRatio)
+
+// 6P适配
+#define k6PScreenWidthRatio  (SZRScreenWidth / 414.0)
+#define k6PScreenHeightRatio (SZRScreenHeight / 736.0)
+#define k6PAdaptedWidth(x)  ceilf((x) * k6PScreenWidthRatio)
+#define k6PAdaptedHeight(x) ceilf((x) * k6PScreenHeightRatio)
+#define k6P_3AdaptedWidth(x)  ceilf((x/3.0) * k6PScreenWidthRatio)
+#define k6P_3AdaptedHeight(x) ceilf((x/3.0) * k6PScreenHeightRatio)
+#define k6PFontAdaptedWidth(x)  floor((x) * k6PScreenWidthRatio)
+
+
+// 字体的自适应大小
+
+#define kAdaptedFontSize(R)     CHINESE_SYSTEM(kAdaptedWidth(R))
+
+// 根据RGB设置颜色
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBACOLOR(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define HEXCOLOR(hex) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:1]
+#define HEXCOLORWITHALPHA(hex,alp) [UIColor colorWithRed:((float)((hex & 0xFF0000) >> 16)) / 255.0 green:((float)((hex & 0xFF00) >> 8)) / 255.0 blue:((float)(hex & 0xFF)) / 255.0 alpha:alp]
+#define kLabelThinLightColor(label,fontSize,color) label.font = [UIFont systemFontOfSize:fontSize weight:UIFontWeightThin];\
+label.textColor = color
+
+
+// 字体大小(常规/粗体)
+#define kLightFont(R) [UIFont fontWithName:@".PingFang-SC-Light" size:R]
+
+
+#define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
+#define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
+#define FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+// 界面背景图片
+#define SZR_VIEW_BG @"dl-bj"
+// APP主题颜色
+#define SZRAPPCOLOR RGBCOLOR(58,181,153)
+// textView背景浅绿
+#define SZRLightGreen RGBCOLOR(89,238,208)
+// 立即体验颜色
+#define SZREXPERCIECOLOR RGBCOLOR(247,118,105)
+// 进度条颜色 浅绿
+#define SZRSLIDERCOLOR RGBCOLOR(23,94,115)
+// 导航条颜色 深绿
+#define SZRNavColor RGBCOLOR(64,203,170)
+// 人名字体颜色
+#define SZRNAMEERCOLOR RGBCOLOR(196,219,171)
+// 字体深绿色
+#define SZR_NewNavColor RGBCOLOR(28,110,110)
+// 字体透明浅绿色
+#define SZR_NewLightGreen RGBCOLOR(80,224,196)
+// 导航条色值
+#define SZRNAVIGATION HEXCOLOR(0x04cbaa)
+
+// 屏幕大小
+#define SZRScreenBounds [UIScreen mainScreen].bounds
+// 屏幕宽度
+#define SZRScreenWidth [UIScreen mainScreen].bounds.size.width
+// 屏幕高度
+#define SZRScreenHeight [UIScreen mainScreen].bounds.size.height
+
+// 判断iPhone尺寸
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height==480)&&([UIScreen mainScreen].bounds.size.width==320)
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height==568)&&([UIScreen mainScreen].bounds.size.width==320)
+#define iPhone6 ([UIScreen mainScreen].bounds.size.height==667)&&([UIScreen mainScreen].bounds.size.width==375)
+#define iPhone6p ([UIScreen mainScreen].bounds.size.height==736)&&([UIScreen mainScreen].bounds.size.width==414)
+
+// 判断系统版本
+#define SYSTEMVERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
+#define COLOR_UNDER_LINE [UIColor colorWithRed:198/255.0 green:198/255.0 blue:198/255.0 alpha:1]
+//字体色彩
+#define kWord_Gray_6 HEXCOLOR(0x666666)
+#define kWord_Gray_4 HEXCOLOR(0x444444)
+#define kWord_Gray_9 HEXCOLOR(0x999999)
+#define kWord_Gray_3 HEXCOLOR(0x333333)
+#define kWord_Transparent_Green HEXCOLOR(0x04C2A3)
+#define kWord_BrightPink_COLOR HEXCOLOR(0xFF6666)
+#define kWord_Yellow_COLOR HEXCOLOR(0xfffada)
+#define kSeperatrLine_Color HEXCOLOR(0xdcdcdc)
+#define kBG_Green_Color HEXCOLOR(0x05cfaa)
+#define kBG_LightGray_Color HEXCOLOR(0xf5f5f5)
+
+
+#define kBackBtnName @"backBtn"
+#define kDefaultUserImage @"defaultUserImage"
+#define kDefaultDoctorImage @"defaultDoctorImgae"
+#define kBG_CommonBG @"dl-bj"
+#define kDefaultLoading @"loading"
+#define kDefaultLoadingFail @"loading_fail"
+
+// NSUserDefaults
+#define DEFAULTS [NSUserDefaults standardUserDefaults]
+// 图片
+#define IMG(name)       [UIImage imageNamed:name]
+#define VCBGImageV [SZRFunction SZRSetLayerImage:self.view imageStr:@"dl-bj"]
+// 快速创建弱指针
+#define __weakSelf __weak typeof(self) weakSelf = self;
+/**
+ *  MBProgressHUD 显示网络连接错误
+ */
+#define VD_SHowNetError(ret) [MBProgressHUD showTextOnly:@"网络连接错误" hideBeforeShow:ret]
+/**
+ *  MBProgressHUD 显示后台返回错误
+ */
+#define VD_ShowBGBackError(ret) [MBProgressHUD showTextOnly:responseObject[@"message"] hideBeforeShow:ret]
+
+
+#import "ImportH.h"
+#import "HHAPI.h"
+
+
+#endif /* SZRPCH_pch */

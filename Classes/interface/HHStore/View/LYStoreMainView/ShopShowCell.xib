@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ShopShowCell">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="273" height="207"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ky7-X4-9zW">
+                        <rect key="frame" x="8" y="8" width="257" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="tXH-ea-7qL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基因检测" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQi-Hy-OLi">
+                        <rect key="frame" x="8" y="148" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥7800.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgR-uK-dlO">
+                        <rect key="frame" x="8" y="179" width="73" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="原价：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9t-Yd-ecU">
+                        <rect key="frame" x="86" y="181.5" width="34" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6778" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLR-HD-8Tq">
+                        <rect key="frame" x="120" y="181" width="29.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHX-c2-ipF">
+                        <rect key="frame" x="120" y="187.5" width="29.5" height="1"/>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.80000000000000004" id="pNN-Qz-IhY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pHX-c2-ipF" firstAttribute="trailing" secondItem="SLR-HD-8Tq" secondAttribute="trailing" id="2Gk-E4-dnC"/>
+                <constraint firstItem="GQi-Hy-OLi" firstAttribute="leading" secondItem="Ky7-X4-9zW" secondAttribute="leading" id="4lg-cQ-w3z"/>
+                <constraint firstItem="hgR-uK-dlO" firstAttribute="top" secondItem="GQi-Hy-OLi" secondAttribute="bottom" constant="10" id="MLo-JS-dhd"/>
+                <constraint firstItem="Ky7-X4-9zW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Tb1-BH-Xzg"/>
+                <constraint firstItem="V9t-Yd-ecU" firstAttribute="leading" secondItem="hgR-uK-dlO" secondAttribute="trailing" constant="5" id="WKB-E5-BOz"/>
+                <constraint firstItem="pHX-c2-ipF" firstAttribute="leading" secondItem="SLR-HD-8Tq" secondAttribute="leading" id="XU7-eS-k4y"/>
+                <constraint firstItem="hgR-uK-dlO" firstAttribute="leading" secondItem="GQi-Hy-OLi" secondAttribute="leading" id="Xri-iy-3Uj"/>
+                <constraint firstItem="pHX-c2-ipF" firstAttribute="centerY" secondItem="SLR-HD-8Tq" secondAttribute="centerY" id="hWX-s0-zWe"/>
+                <constraint firstItem="Ky7-X4-9zW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="j90-Wd-Vca"/>
+                <constraint firstItem="SLR-HD-8Tq" firstAttribute="leading" secondItem="V9t-Yd-ecU" secondAttribute="trailing" id="mJa-4H-isI"/>
+                <constraint firstItem="V9t-Yd-ecU" firstAttribute="centerY" secondItem="hgR-uK-dlO" secondAttribute="centerY" id="onp-HT-No3"/>
+                <constraint firstItem="GQi-Hy-OLi" firstAttribute="top" secondItem="Ky7-X4-9zW" secondAttribute="bottom" constant="10" id="pM9-jj-6H7"/>
+                <constraint firstAttribute="trailing" secondItem="Ky7-X4-9zW" secondAttribute="trailing" constant="8" id="wz9-u5-BLo"/>
+                <constraint firstItem="SLR-HD-8Tq" firstAttribute="centerY" secondItem="V9t-Yd-ecU" secondAttribute="centerY" id="xTC-o6-Kon"/>
+            </constraints>
+            <size key="customSize" width="273" height="207"/>
+            <connections>
+                <outlet property="goodsPriceLabel" destination="hgR-uK-dlO" id="Ckd-Fp-Mja"/>
+                <outlet property="imageUrl" destination="Ky7-X4-9zW" id="DSy-vX-W5E"/>
+                <outlet property="originalPriceLabel" destination="SLR-HD-8Tq" id="lj3-O4-Scu"/>
+                <outlet property="title_Label" destination="GQi-Hy-OLi" id="HVC-Lb-lhY"/>
+            </connections>
+            <point key="canvasLocation" x="-64.5" y="52.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
